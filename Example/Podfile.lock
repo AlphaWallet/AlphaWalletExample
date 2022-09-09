@@ -1,0 +1,310 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Alamofire-Synchronous (4.0.0):
+    - Alamofire (~> 4.0)
+  - AlphaWalletAddress (1.0.2):
+    - AlphaWalletCore
+    - EthereumAddress
+    - TrustKeystore
+    - web3swift
+  - AlphaWalletCore (1.0.2):
+    - Alamofire
+    - PromiseKit
+  - AlphaWalletENS (1.0.0):
+    - AlphaWalletAddress
+    - AlphaWalletCore
+    - PromiseKit
+    - web3swift
+  - AlphaWalletFoundation (1.0.0):
+    - AlphaWalletAddress
+    - AlphaWalletCore
+    - AlphaWalletENS
+    - AlphaWalletGoBack
+    - AlphaWalletOpenSea
+    - AlphaWalletWeb3Provider
+    - APIKit (= 5.1.0)
+    - Apollo
+    - BigInt (~> 3.1)
+    - BlockiesSwift
+    - CombineExt (= 1.8.0)
+    - CryptoSwift (~> 1.4)
+    - EthereumABI
+    - JSONRPCKit (~> 2.0.0)
+    - Kanna
+    - Moya (~> 10.0.1)
+    - PaperTrailLumberjack/Swift
+    - PromiseKit/Alamofire
+    - PromiseKit/CorePromise
+    - RealmSwift (= 10.27.0)
+    - SwiftLint (= 0.40.3)
+    - SwiftyJSON (= 5.0.0)
+    - TrezorCrypto
+    - TrustKeystore
+    - TrustWalletCore (= 2.6.34)
+    - web3swift
+  - AlphaWalletGoBack (1.0.0)
+  - AlphaWalletOpenSea (1.0.0):
+    - AlphaWalletAddress
+    - AlphaWalletCore
+    - PromiseKit
+    - SwiftyJSON (= 5.0.0)
+  - AlphaWalletSDK (1.0.0):
+    - AlphaWalletAddress
+    - AlphaWalletCore
+    - AlphaWalletENS
+    - AlphaWalletFoundation
+    - AlphaWalletGoBack
+    - AlphaWalletOpenSea
+  - AlphaWalletWeb3Provider (0.3.0)
+  - APIKit (5.1.0)
+  - Apollo (0.53.0):
+    - Apollo/Core (= 0.53.0)
+  - Apollo/Core (0.53.0)
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - BlockiesSwift (0.1.2)
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
+  - CocoaLumberjack/Swift (3.7.4):
+    - CocoaLumberjack/Core
+  - CombineExt (1.8.0)
+  - CryptoSwift (1.5.1)
+  - EthereumABI (1.3.0):
+    - BigInt (~> 3.1)
+    - CryptoSwift (~> 1.0)
+    - EthereumAddress (~> 1.3)
+  - EthereumAddress (1.3.0):
+    - CryptoSwift (~> 1.0)
+  - JSONRPCKit (2.0.3):
+    - Result (~> 3.0)
+  - Kanna (5.0.0)
+  - KeychainSwift (10.0.0)
+  - libsodium (1.0.12)
+  - Moya (10.0.2):
+    - Moya/Core (= 10.0.2)
+  - Moya/Core (10.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - PaperTrailLumberjack/Core (0.1.9):
+    - CocoaAsyncSocket (~> 7.6)
+    - CocoaLumberjack (~> 3.4)
+  - PaperTrailLumberjack/Swift (0.1.9):
+    - CocoaLumberjack/Swift (~> 3.4)
+    - PaperTrailLumberjack/Core
+  - PromiseKit (6.3.5):
+    - PromiseKit/CorePromise (= 6.3.5)
+    - PromiseKit/Foundation (= 6.3.5)
+    - PromiseKit/UIKit (= 6.3.5)
+  - PromiseKit/Alamofire (6.3.5):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.3.5)
+  - PromiseKit/Foundation (6.3.5):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.3.5):
+    - PromiseKit/CorePromise
+  - Realm (10.27.0):
+    - Realm/Headers (= 10.27.0)
+  - Realm/Headers (10.27.0)
+  - RealmSwift (10.27.0):
+    - Realm (= 10.27.0)
+  - Result (3.2.4)
+  - SAMKeychain (1.5.3)
+  - secp256k1_ios (0.1.3)
+  - SipHash (1.2.2)
+  - SwiftLint (0.40.3)
+  - SwiftProtobuf (1.20.1)
+  - SwiftyJSON (5.0.0)
+  - TrezorCrypto (0.0.9)
+  - TrustKeystore (0.1.3):
+    - CryptoSwift (~> 1.0)
+    - secp256k1_ios (~> 0.1.0)
+    - TrezorCrypto
+  - TrustWalletCore (2.6.34):
+    - TrustWalletCore/Core (= 2.6.34)
+  - TrustWalletCore/Core (2.6.34):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (2.6.34):
+    - SwiftProtobuf
+  - web3swift (0.9.0):
+    - Alamofire (~> 4.7)
+    - Alamofire-Synchronous (~> 4.0)
+    - BigInt (~> 3.0)
+    - CryptoSwift (~> 1.0)
+    - libsodium (~> 1.0.12)
+    - PromiseKit (~> 6.3.0)
+    - Result (~> 3.1)
+    - secp256k1_ios (~> 0.1.3)
+
+DEPENDENCIES:
+  - AlphaWalletAddress (from `https://github.com/AlphaWallet/alpha-wallet-ios.git`, commit `ab6678d6f4c195558d116c86db948e6524f24adb`)
+  - AlphaWalletCore (from `https://github.com/AlphaWallet/alpha-wallet-ios.git`, commit `ab6678d6f4c195558d116c86db948e6524f24adb`)
+  - AlphaWalletENS (from `https://github.com/AlphaWallet/alpha-wallet-ios.git`, commit `ab6678d6f4c195558d116c86db948e6524f24adb`)
+  - AlphaWalletFoundation (from `https://github.com/AlphaWallet/alpha-wallet-ios.git`, commit `ab6678d6f4c195558d116c86db948e6524f24adb`)
+  - AlphaWalletGoBack (from `https://github.com/AlphaWallet/alpha-wallet-ios.git`, commit `ab6678d6f4c195558d116c86db948e6524f24adb`)
+  - AlphaWalletOpenSea (from `https://github.com/AlphaWallet/alpha-wallet-ios.git`, commit `ab6678d6f4c195558d116c86db948e6524f24adb`)
+  - AlphaWalletSDK (from `../`)
+  - AlphaWalletWeb3Provider (from `https://github.com/AlphaWallet/AlphaWallet-web3-provider`, commit `9a4496d02b7ddb2f6307fd0510d8d7c9fcef9870`)
+  - EthereumABI (from `https://github.com/AlphaWallet/EthereumABI.git`, commit `877b77e8e7cbc54ab0712d509b74fec21b79d1bb`)
+  - Kanna (from `https://github.com/tid-kijyun/Kanna.git`, commit `06a04bc28783ccbb40efba355dee845a024033e8`)
+  - KeychainSwift (from `https://github.com/AlphaWallet/keychain-swift.git`, commit `b797d40a9d08ec509db4335140cf2259b226e6a2`)
+  - SAMKeychain
+  - TrustKeystore (from `https://github.com/AlphaWallet/latest-keystore-snapshot`, commit `c0bdc4f6ffc117b103e19d17b83109d4f5a0e764`)
+  - TrustWalletCore (= 2.6.34)
+  - web3swift (from `https://github.com/AlphaWallet/web3swift.git`, commit `6d7c01af26bcb75d8a02b6709b089e02ed99af98`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Alamofire-Synchronous
+    - APIKit
+    - Apollo
+    - BigInt
+    - BlockiesSwift
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - CombineExt
+    - CryptoSwift
+    - EthereumAddress
+    - JSONRPCKit
+    - libsodium
+    - Moya
+    - PaperTrailLumberjack
+    - PromiseKit
+    - Realm
+    - RealmSwift
+    - Result
+    - SAMKeychain
+    - secp256k1_ios
+    - SipHash
+    - SwiftLint
+    - SwiftProtobuf
+    - SwiftyJSON
+    - TrezorCrypto
+    - TrustWalletCore
+
+EXTERNAL SOURCES:
+  AlphaWalletAddress:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletCore:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletENS:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletFoundation:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletGoBack:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletOpenSea:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletSDK:
+    :path: "../"
+  AlphaWalletWeb3Provider:
+    :commit: 9a4496d02b7ddb2f6307fd0510d8d7c9fcef9870
+    :git: https://github.com/AlphaWallet/AlphaWallet-web3-provider
+  EthereumABI:
+    :commit: 877b77e8e7cbc54ab0712d509b74fec21b79d1bb
+    :git: https://github.com/AlphaWallet/EthereumABI.git
+  Kanna:
+    :commit: 06a04bc28783ccbb40efba355dee845a024033e8
+    :git: https://github.com/tid-kijyun/Kanna.git
+  KeychainSwift:
+    :commit: b797d40a9d08ec509db4335140cf2259b226e6a2
+    :git: https://github.com/AlphaWallet/keychain-swift.git
+  TrustKeystore:
+    :commit: c0bdc4f6ffc117b103e19d17b83109d4f5a0e764
+    :git: https://github.com/AlphaWallet/latest-keystore-snapshot
+  web3swift:
+    :commit: 6d7c01af26bcb75d8a02b6709b089e02ed99af98
+    :git: https://github.com/AlphaWallet/web3swift.git
+
+CHECKOUT OPTIONS:
+  AlphaWalletAddress:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletCore:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletENS:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletFoundation:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletGoBack:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletOpenSea:
+    :commit: ab6678d6f4c195558d116c86db948e6524f24adb
+    :git: https://github.com/AlphaWallet/alpha-wallet-ios.git
+  AlphaWalletWeb3Provider:
+    :commit: 9a4496d02b7ddb2f6307fd0510d8d7c9fcef9870
+    :git: https://github.com/AlphaWallet/AlphaWallet-web3-provider
+  EthereumABI:
+    :commit: 877b77e8e7cbc54ab0712d509b74fec21b79d1bb
+    :git: https://github.com/AlphaWallet/EthereumABI.git
+  Kanna:
+    :commit: 06a04bc28783ccbb40efba355dee845a024033e8
+    :git: https://github.com/tid-kijyun/Kanna.git
+  KeychainSwift:
+    :commit: b797d40a9d08ec509db4335140cf2259b226e6a2
+    :git: https://github.com/AlphaWallet/keychain-swift.git
+  TrustKeystore:
+    :commit: c0bdc4f6ffc117b103e19d17b83109d4f5a0e764
+    :git: https://github.com/AlphaWallet/latest-keystore-snapshot
+  web3swift:
+    :commit: 6d7c01af26bcb75d8a02b6709b089e02ed99af98
+    :git: https://github.com/AlphaWallet/web3swift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
+  AlphaWalletAddress: 9dccc77a5ce4abe0e782e05c8ddde4ddbb7c11a7
+  AlphaWalletCore: 635739018555de844a020f8b9b7d49610b3de655
+  AlphaWalletENS: 609407f0a31b31f769d2ddeedf4048b67805254b
+  AlphaWalletFoundation: 4ca776c9be47cb8594e5f6c3eb6fcebd823ce109
+  AlphaWalletGoBack: 1d55b51e6cfd999740d3cfab09d9fa723ba85ff2
+  AlphaWalletOpenSea: 71e255612529b04ae4d66dca54bd181185593b1d
+  AlphaWalletSDK: 5fdf2c183f771c4956525390d0d9354f7bc35570
+  AlphaWalletWeb3Provider: 7ca1e1c1dc841dc1915f970daace48bf34931655
+  APIKit: 9e1a4069608bf0ae5238811e6cfc26928ad4d01e
+  Apollo: 204819ea82022fbc59ad05056820df867f19bd02
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  BlockiesSwift: 22d8d56dd187e6bfd16cb8c8fbd4fd4896c3e65d
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  CombineExt: c4daa97ef75754d8ef319bd79edeef82652f3eea
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
+  EthereumABI: c021720744d260b87def6aa45d94554d260cb5a9
+  EthereumAddress: 39fe8e11cf04e4e9902b55ae653dbc4e0aee5f30
+  JSONRPCKit: b2991f2f242d72022083f9d869140dabd26d65c7
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  KeychainSwift: c0d1b0c2901b9873f07f0e560fde92929069e863
+  libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
+  Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
+  PaperTrailLumberjack: 449587968d5aeb3eab2d4de041ffc61ee2d49f25
+  PromiseKit: 32c36425387e9cfc7f1206f27bfd906d0b53c0d6
+  Realm: 9ca328bd7e700cc19703799785e37f77d1a130f2
+  RealmSwift: 271de77b09a73c5e46ee3252283878153bd5d288
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  secp256k1_ios: ac9ef04e761f43c58012b28548afa91493761f17
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  SwiftProtobuf: e40a7684079620e84ba522dbaeab0cddb0ec7ffd
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TrezorCrypto: bfeea47a052dca2c77d4a39e1e183865e52de14d
+  TrustKeystore: 3d8b4571c66648fb985015c96b3185440bb837fe
+  TrustWalletCore: a92d85baa15932279cce925559e93695558cafdd
+  web3swift: 06118d4c4edc801444aaa995bbbddeda176b97ef
+
+PODFILE CHECKSUM: 8a0bc72e22f0d6aa9a661fe8e892b387c4877d68
+
+COCOAPODS: 1.11.2

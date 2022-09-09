@@ -22,7 +22,7 @@ pod 'AlphaWalletSDK'
 
 ## Author
 
-vladyslav-iosdev, krypto.pank@gmail.com
+oa-s, krypto.pank@gmail.com
 
 ## License
 

@@ -1,42 +1,33 @@
 #
-# Be sure to run `pod lib lint AlphaWalletSDK.podspec' to ensure this is a
-# valid spec before submitting.
+#  Be sure to run `pod spec lint AlphaWalletFoundation.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'AlphaWalletSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AlphaWalletSDK.'
+Pod::Spec.new do |spec|
+  spec.name         = "AlphaWalletSDK"
+  spec.version      = "1.0.0"
+  spec.summary      = "AlphaWallet functionality"
+  spec.description      = "Core wallet functionality"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author             = { "Vladyslav Shepitko" => "vladyslav.shepitko@gmail.com" }
+  spec.homepage     = "https://github.com/AlphaWallet/AlphaWalletSDK"
+  spec.ios.deployment_target = '13.0'
+  spec.swift_version    = '4.2'
+  spec.platform         = :ios, "13.0"
+  spec.source           = { :git => 'git@github.com:AlphaWallet/alpha-wallet-ios.git', :tag => "#{spec.version}" }
+  spec.source_files     = 'AlphaWalletSDK/**/*.{h,m,swift}'
+  spec.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-Owholemodule' }
+  spec.resource_bundles = {'AlphaWalletSDK' => ['AlphaWalletSDK/**/*.{graphql,json}'] }
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.source_files        = 'AlphaWalletSDK/**/*.{h,m,swift}'
+  spec.dependency 'AlphaWalletFoundation'
+  spec.dependency 'AlphaWalletCore'
+  spec.dependency 'AlphaWalletAddress'
+  spec.dependency 'AlphaWalletGoBack'
+  spec.dependency 'AlphaWalletOpenSea'
+  spec.dependency 'AlphaWalletENS'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/vladyslav-iosdev/AlphaWalletSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vladyslav-iosdev' => 'krypto.pank@gmail.com' }
-  s.source           = { :git => 'https://github.com/vladyslav-iosdev/AlphaWalletSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'AlphaWalletSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'AlphaWalletSDK' => ['AlphaWalletSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
