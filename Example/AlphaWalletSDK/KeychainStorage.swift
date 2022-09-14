@@ -15,8 +15,8 @@ import LocalAuthentication
 final class KeychainStorage: SecuredStorage, SecuredPasswordStorage {
     private let keychain: KeychainSwift
 
-    init(keyPrefix: String = Constants.keychainKeyPrefix) throws {
-        let keychain = KeychainSwift(keyPrefix: Constants.keychainKeyPrefix)
+    init() throws {
+        let keychain = KeychainSwift(keyPrefix: "keychainKeyPrefix")
         keychain.synchronizable = false
 
         self.keychain = keychain

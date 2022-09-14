@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 
     private lazy var keystore: Keystore = {
         let store = JsonWalletAddressesStore()
-        let storage = try! KeychainStorage(keyPrefix: "test-app")
+        let storage = try! KeychainStorage()
         return EtherKeystore(keychain: storage, walletAddressesStore: store, analytics: analytics)
     }()
     private var cancelable: Set<AnyCancellable> = .init()
