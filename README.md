@@ -36,6 +36,33 @@ AlphaWalletSDK provides access to core features of Wallet app including:
 
 ## Key managment
 Key managment features perform defined in `Keystore` protocol, with its implementation `EtherKeystore`. 
+Keystore creates using:
+```
+private lazy var keystore: Keystore = {
+    let store = JsonWalletAddressesStore()
+    let storage = try! KeychainStorage(keyPrefix: "<test-app>")
+    return EtherKeystore(keychain: storage, walletAddressesStore: store, analytics: analytics)
+}()
+```
+A new wallet could be generated, imported using seed phrase or private key:
+```
+let wallet: Wallet = try keystore.createAccount().get()
+```
+
+Message signing could be performed using next construction:
+```
+guard let message: Data = "Hello AlphaWallet".data(using: .utf8) else { return }
+let signature: Data = try keystore.signMessage(message, for: wallet.address, prompt: "Sign Message").get()
+```
+For verifying signed message could be used the next instruction:
+```
+switch Web3.Utils.ecrecover(message: message, signature: signature) {
+case .success(let address):
+    assert(wallet.address.sameContract(as: address))
+case .failure(let error):
+    print(error)
+}
+```
 <!-- ## TokenScript -->
  
 ## Activities and transactions
