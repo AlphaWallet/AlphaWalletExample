@@ -66,6 +66,8 @@ The list of available credential keys listed below:
 - BLOCKSCHATPROXYKEY
 - COVALENTAPIKEY
 - KLAYTNRPCNODEKEYBASICAUTH
+- PAPERTRAILHOST
+- PAPERTRAILPORT
 
 AlphaWalletSDK provides access to core features of Wallet app including:
 - Key managment
