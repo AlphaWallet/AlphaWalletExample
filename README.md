@@ -26,6 +26,41 @@ Also make sure pod file has right link for `AlphaWalletWeb3Provider`
 pod 'AlphaWalletWeb3Provider', :git=>'https://github.com/AlphaWallet/AlphaWallet-web3-provider', :commit => '9a4496d02b7ddb2f6307fd0510d8d7c9fcef9870'
 ```
 
+### Replace API Keys
+
+## Credentials:
+
+For updating credentials for services like `Infura`, `Etherscan` use `.credentials` file placed in `SOURCE_ROOT` root directory of your project.
+Update `.credentials` file with key value pairs separated with `=`.
+
+```
+INFURAKEY=<YOUR INFURA API KEY>
+ETHERSCANKEY=
+BINANCESMARTCHAINEXPLORERAPIKEY=
+POLYGONSCANEXPLORERAPIKEY=
+OPENSEAKEY=
+COINBASEAPPID=
+COVALENTAPIKEY=
+KLAYTNRPCNODEKEYBASICAUTH=
+```
+
+The list of available credential keys listed below:
+
+- INFURAKEY
+- ETHERSCANKEY
+- BINANCESMARTCHAINEXPLORERAPIKEY
+- POLYGONSCANEXPLORERAPIKEY
+- OPENSEAKEY
+- RAMPAPIKEY
+- COINBASEAPPID
+- ENJINUSERNAME
+- ENJINUSERPASSWORD
+- WALLETCONNECTPROJECTID
+- UNSTOPPABLEDOMAINSV2KEY
+- BLOCKSCHATPROXYKEY
+- COVALENTAPIKEY
+- KLAYTNRPCNODEKEYBASICAUTH
+
 AlphaWalletSDK provides access to core features of Wallet app including:
 - Key managment
 <!-- TokenScript --> 
