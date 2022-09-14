@@ -5,9 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/AlphaWalletSDK.svg?style=flat)](https://cocoapods.org/pods/AlphaWalletSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AlphaWalletSDK.svg?style=flat)](https://cocoapods.org/pods/AlphaWalletSDK)
 
-## Example
+## To run Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+1. cd `<some directory>`
+2. git clone git@github.com:AlphaWallet/AlphaWalletSDK.git
+3. cd Example
+4. bundle
+5. bundle exec pod install
+6. open AlphaWalletSDK.xcworkspace
+
+The code part that interacts with wallets is in https://github.com/AlphaWallet/AlphaWalletSDK/blob/e2b7f9d362c4430fa3904196e61c90c2e3a1fde9/Example/AlphaWalletSDK/ViewController.swift#L51 (reference might be outdated).
 
 ## Requirements
 
