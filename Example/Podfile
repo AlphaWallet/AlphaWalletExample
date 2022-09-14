@@ -11,15 +11,13 @@ target 'AlphaWalletSDK_Example' do
   pod 'web3swift', :git => 'https://github.com/AlphaWallet/web3swift.git', :commit=> '6d7c01af26bcb75d8a02b6709b089e02ed99af98'
   pod 'SAMKeychain'
   pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna.git', :commit => '06a04bc28783ccbb40efba355dee845a024033e8'
-  pod 'TrustWalletCore', '2.6.34'
   pod 'EthereumABI', :git => 'https://github.com/AlphaWallet/EthereumABI.git', :commit => '877b77e8e7cbc54ab0712d509b74fec21b79d1bb'
-
-  pod 'AlphaWalletAddress', :git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'ab6678d6f4c195558d116c86db948e6524f24adb'
-  pod 'AlphaWalletCore', :git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'ab6678d6f4c195558d116c86db948e6524f24adb'
-  pod 'AlphaWalletGoBack', :git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'ab6678d6f4c195558d116c86db948e6524f24adb'
-  pod 'AlphaWalletENS', :git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'ab6678d6f4c195558d116c86db948e6524f24adb'
-  pod 'AlphaWalletOpenSea', :git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'ab6678d6f4c195558d116c86db948e6524f24adb'
-  pod 'AlphaWalletFoundation', :git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'ab6678d6f4c195558d116c86db948e6524f24adb'
+  pod 'AlphaWalletAddress', :path => '~/projects/alpha-wallet-ios'#:git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'a1ebc5ac622cbec43a3c84c6005dce0182e59e64'
+  pod 'AlphaWalletCore', :path => '~/projects/alpha-wallet-ios'#:git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'a1ebc5ac622cbec43a3c84c6005dce0182e59e64'
+  pod 'AlphaWalletGoBack', :path => '~/projects/alpha-wallet-ios'#:git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'a1ebc5ac622cbec43a3c84c6005dce0182e59e64'
+  pod 'AlphaWalletENS', :path => '~/projects/alpha-wallet-ios'#:git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'a1ebc5ac622cbec43a3c84c6005dce0182e59e64'
+  pod 'AlphaWalletOpenSea', :path => '~/projects/alpha-wallet-ios'#:git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'a1ebc5ac622cbec43a3c84c6005dce0182e59e64'
+  pod 'AlphaWalletFoundation', :path => '~/projects/alpha-wallet-ios'#:git => 'https://github.com/AlphaWallet/alpha-wallet-ios.git', :commit => 'a1ebc5ac622cbec43a3c84c6005dce0182e59e64'
 
   target 'AlphaWalletSDK_Tests' do
     inherit! :search_paths

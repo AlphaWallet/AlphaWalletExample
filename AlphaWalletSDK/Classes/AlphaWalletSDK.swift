@@ -9,6 +9,7 @@ public typealias Wallet = AlphaWalletFoundation.Wallet
 public typealias Keystore = AlphaWalletFoundation.Keystore
 public typealias EtherKeystore = AlphaWalletFoundation.EtherKeystore
 public typealias JsonWalletAddressesStore = AlphaWalletFoundation.JsonWalletAddressesStore
+public typealias Web3 = AlphaWalletFoundation.Web3
 
 /**Configuration**/
 public typealias Constants = AlphaWalletFoundation.Constants
