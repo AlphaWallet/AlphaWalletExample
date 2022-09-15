@@ -36,7 +36,7 @@ pod 'AlphaWalletWeb3Provider', :git=>'https://github.com/AlphaWallet/AlphaWallet
 ### Replace API Keys
 
 ## Credentials:
-AlphaWallet use process environment variable to resolve credential file `ProcessInfo.processInfo.environment`, modify your xcode scheme to add an environment var `SOURCE_ROOT` with the value `${SRCROOT}` to add path to your development credentials, you can update your projects `ProcessInfo.processInfo.environment` using `credential keys` for defining credentials for your specific xcode scheme for production version.
+AlphaWallet use process environment variable to resolve credential file `ProcessInfo.processInfo.environment`, modify your xcode scheme to add an environment var `SOURCE_ROOT` with the value `${SOURCE_ROOT}` to add path to your development credentials, you can update your projects `ProcessInfo.processInfo.environment` using `credential keys` for defining credentials for your specific xcode scheme for production version.
 For updating credentials for services like `Infura`, `Etherscan` use `.credentials` file placed in `SOURCE_ROOT` root directory of your project.
 Update development `.credentials` file with key value pairs separated with `=`.
 
